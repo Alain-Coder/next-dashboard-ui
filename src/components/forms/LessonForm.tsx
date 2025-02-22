@@ -25,10 +25,14 @@ import Image from "next/image";
 
 const LessonForm = ({
     type,
-    data
+    data,
+    setOpen,
+    relatedData,
     }: {
         type:"create" | "update";
-        data?:any
+        data?:any;
+        setOpen: Dispatch<SetStateAction<boolean>>;
+        relatedData?: any;
     }) => {
 
         const {
